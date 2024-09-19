@@ -1,0 +1,72 @@
+
+.schedule-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.day-list {
+    list-style-type: none;
+    padding: 0;
+    width: 150px;
+}
+
+.day {
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #ffcccb;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+
+.day:hover {
+    background-color: #ff8c8c;
+}
+
+.lesson {
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.lesson:hover {
+    background-color: #dcdcdc;
+    transform: scale(1.05);
+}
+
+.lesson:active {
+    background-color: #a9a9a9;
+}
+
+.lesson:first-child {
+    background-color: #ffeb3b;
+}
+
+.lesson:last-child {
+    background-color: #8bc34a;
+}
+
+.day-list:nth-child(odd) .lesson {
+    background-color: #d1c4e9;
+}
+
+.day-list:nth-child(even) .lesson {
+    background-color: #b3e5fc;
+}
+
+
+.lesson:focus {
+    outline: 2px solid #ff9800;
+}
+
+.lesson:nth-of-type(2n) {
+    background-color: #ffcc80;
+}
+
+.lesson:disabled {
+    background-color: #e0e0e0;
+}
